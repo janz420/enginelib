@@ -1,0 +1,59 @@
+#include "stdafx.h"
+#include "./BugTrapStr.h"
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#endif
+
+namespace BUG_TRAP
+{
+	TCHAR szEMail[MAX_PATH]			= _T("RanOnlinePH@ranonline.com");
+
+#ifdef CH_PARAM 
+	TCHAR szSupportURL[MAX_PATH]	= _T("RanOnlineCH");
+	TCHAR szCountry[MAX_PATH]		= _T("_CH");
+#elif TH_PARAM
+	TCHAR szSupportURL[MAX_PATH]	= _T("RanOnlineTH");
+	TCHAR szCountry[MAX_PATH]		= _T("_TH");
+#elif MY_PARAM 
+	TCHAR szSupportURL[MAX_PATH]	= _T("RanOnline");
+	TCHAR szCountry[MAX_PATH]		= _T("_MY");
+#elif MYE_PARAM
+	TCHAR szSupportURL[MAX_PATH]	= _T("RanOnline");
+	TCHAR szCountry[MAX_PATH]		= _T("_MYE");
+#elif ID_PARAM
+	TCHAR szSupportURL[MAX_PATH]	= _T("RanOnline");
+	TCHAR szCountry[MAX_PATH]		= _T("_ID");
+#elif PH_PARAM
+	TCHAR szSupportURL[MAX_PATH]	= _T("RanOnline");
+	TCHAR szCountry[MAX_PATH]		= _T("_PH");
+#elif VN_PARAM
+	TCHAR szSupportURL[MAX_PATH]	= _T("RanOnline");
+	TCHAR szCountry[MAX_PATH]		= _T("_VN");
+#elif JP_PARAM
+	TCHAR szSupportURL[MAX_PATH]	= _T("RanOnline");
+	TCHAR szCountry[MAX_PATH]		= _T("_JP");
+#elif TW_PARAM
+	TCHAR szSupportURL[MAX_PATH]	= _T("RanOnline");
+	TCHAR szCountry[MAX_PATH]		= _T("_TW");
+#elif HK_PARAM
+	TCHAR szSupportURL[MAX_PATH]	= _T("RanOnline");
+	TCHAR szCountry[MAX_PATH]		= _T("_HK");
+#elif KR_PARAM
+	TCHAR szSupportURL[MAX_PATH]	= _T("RanOnline");
+	TCHAR szCountry[MAX_PATH]		= _T("_KR");
+#elif KRT_PARAM
+	TCHAR szSupportURL[MAX_PATH]	= _T("RanOnline");
+	TCHAR szCountry[MAX_PATH]		= _T("_KRT");
+#elif GS_PARAM
+	TCHAR szSupportURL[MAX_PATH]	= _T("RanOnline");
+	TCHAR szCountry[MAX_PATH]		= _T("_GS");
+#else
+	TCHAR szSupportURL[MAX_PATH]	= _T("RanOnline");
+	TCHAR szCountry[MAX_PATH]		= _T("");
+#endif
+
+	TCHAR szServerAddr[MAX_PATH]	= _T("bugtrap.ranonline.com");
+	SHORT nPort						= 8888;
+
+};
