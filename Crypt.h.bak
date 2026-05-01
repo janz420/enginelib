@@ -1,0 +1,53 @@
+#ifndef NEOEASYCRYPTION_TEST_
+#define NEOEASYCRYPTION_TEST_
+
+#pragma once
+
+namespace CCrypt
+{
+	enum
+	{
+		//ORIGINAL
+		//EN = 0x5FFF2AAF,
+		//EN2 = 0x1AEDAA0A,
+		//END = 0x03,
+
+		//UG RAN CRYPT
+		EN = 0x5FFF2999,
+		EN2 = 0x1AEDBB0B,
+		END = 0x03,
+		
+
+		//NOT USED
+		//EN = 0x5FFF8F8F,
+		//EN2 = 0x1AEDBB0B,
+		//END = 0x08,
+	};
+	enum
+	{
+		ENTYPE_ALL,
+	};
+	enum
+	{
+		ENCRY_VER = 0x100,
+		ENCRY_HEADER_SIZE = 12,
+	};
+
+	enum 
+	{
+		TEXTURE_DDS,
+		TEXTURE_TGA,
+
+		TEXTURE_TYPE,
+	};
+	extern BOOL	bCryptRCC;
+	extern BOOL	bEngineDebug;
+	extern BOOL	bEngineDebugLog; // Added By Janzs420
+
+	void Encryption(BYTE* B,int dwSize);
+	void Decryption(BYTE* B,int dwSize);
+	void LoadSetting( const TCHAR *szRootPath );
+
+};
+
+#endif
